@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/userProfile">
+
+    <fragment
+        android:id="@+id/userProfile"
+        android:name="pl.mimuw.bookbook.ui.UserProfile"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile" />
+    <fragment
+        android:id="@+id/newOffer"
+        android:name="pl.mimuw.bookbook.ui.NewOffer"
+        android:label="fragment_new_offer"
+        tools:layout="@layout/fragment_new_offer" >
+        <action
+            android:id="@+id/add_successful"
+            app:destination="@id/userProfile" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchEngine"
+        android:name="pl.mimuw.bookbook.ui.SearchEngine"
+        android:label="fragment_search_engine"
+        tools:layout="@layout/fragment_search_engine" >
+        <argument
+            android:name="offer_pos"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/view_offer"
+            app:destination="@id/offerInfo" />
+    </fragment>
+    <fragment
+        android:id="@+id/offerInfo"
+        android:name="pl.mimuw.bookbook.ui.OfferInfo"
+        android:label="fragment_offer_info"
+        tools:layout="@layout/fragment_offer_info" />
+</navigation>
