@@ -6,7 +6,7 @@ Some of the projects I developed during my time at the University of Warsaw. The
 
 There are three projects:
 - Concurrent Programming Project focused on implementing mechanism of transactions (similiar to the ones common in SQL): `java/cp1`
-- Object-Oriented Programming Project focused on implementing various algorithms solving problem of cover of a string: `java/cover`
+- Object-Oriented Programming Project focused on implementing various algorithms solving problem of cover of a set: `java/cover`
 - Object-Oriented Programming Project that simulates process of elections (in polish): `java/wybory`
 
 # Android project
