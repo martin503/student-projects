@@ -11,4 +11,4 @@ There are three projects:
 
 # Android project
 
-BookBook is the biggest project I have participated yet. Our goal was to create an app that connects people that love books and want to share their favorite books. Android-part of the app can be found in `android/BookBook/app`.
+BookBook is the biggest project I have participated yet. Our goal was to create an app that connects people who love books and want to share their favorite books. Android-part of the app can be found in `android/BookBook/app`.
